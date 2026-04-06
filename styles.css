@@ -1,0 +1,266 @@
+:root{ /*Espaciado*/
+    --baseline: 0.5rem; /*8 px*/
+    --padding-general: 2rem; /*32 px*/
+    --gap-general: 1rem; /*16 px*/
+
+     --step--1: 0.75rem; /*12 px*/
+    --step-0: 1rem; /*16 px*/
+    --step-1: 1.333rem; /*21.33 px*/
+    --step-2: 1.777rem; /*28.44 px*/
+    --step-3: 2.369rem; /*37.92 px*/
+    --step-4: 3.157rem; /*50.56 px*/
+    --step-5: 4.209rem; /*67.41 px*/
+
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*Paleta de color
+azul/negro: #1c1735
+morado: #4a469b
+naranja: #cb6134
+amarillo: #fcb364
+casi blanco: #fcedd8*/
+body{
+    color: #1c1735;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+/*Barra de navegación*/
+.nav{
+    position: fixed; /*Por favor barrita no te muevas*/
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #1c1735;
+    border-bottom: 1px solid #1c1735
+    ;
+    z-index: 1000;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    gap: 24px;
+    padding: 26px;
+    font-family: "Inter", sans-serif;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fcedd8;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+a{
+    text-decoration: none;
+    color: #1c1735;
+}
+
+.panel-relative{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    scroll-snap-align: start;
+}
+
+.panel-relative2{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    scroll-snap-align: start;
+}
+
+.panel-relative3{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    scroll-snap-align: start;
+}
+
+#portada{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#portadas{
+    position: relative;
+    width: 28%;
+    height: auto;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+#yo{
+    position: relative;
+    width: 70%;
+    height: auto;
+}
+
+.content h1{
+    justify-content: center;
+    align-items: center;
+    font-family: "Amarante", serif;
+    font-size: 48px;
+    padding: 50px;
+}
+
+.content h2{
+    font-family: "Amarante", serif;
+    font-size: 32px;
+    text-align: left;
+    padding: 20px;
+}
+
+.content h3{
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    text-align: left;
+    padding: 5px;
+}
+
+
+#center{
+     text-align: center;
+     padding: 5px;
+     color: #4a469b;
+}
+
+#imag{
+     text-align: center;
+     padding: 5px;
+     color: #4a469b;
+}
+
+#center1{
+     text-align: center;
+     padding: 20px;
+}
+
+#center2{
+     text-align: center;
+     padding: 5px;
+}
+
+.content p{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+}
+
+#educacion{ color: #4a469b;}
+
+#sec1{background: #fcedd8;
+    padding: 50px;
+}
+#sec2{background: #fcedd8;
+    padding: 30px;    
+}
+#sec3{background: #fcedd8;}
+
+.btn{
+    padding: .8rem 1rem;
+    border-radius: .9rem;
+    border: 1px #cb6134;
+    background: #cb6134;
+    color: #fcedd8;
+    /*cursor: pointer;*/
+}
+
+.imagen{
+    width: auto;
+    height: 600px;
+    border-radius: 2rem;
+}
+
+.imagen2{
+    width: 200px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.imagen3{
+    position: relative;
+    width: 50%;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.slider-box{
+    width: 70%;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0px;
+    width: 500%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+.footer a{
+    text-decoration: none;
+    color: #fcedd8;
+}
+
+.footer{
+    grid-column: span 12;
+    grid-row: span 4;
+    background: #1c1735;
+    color: #fcedd8;
+    padding: var(--padding-general);
+}
+
+.footer small{
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+
+.footer small{
+    font-size: var(--step--1);
+}
